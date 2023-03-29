@@ -1,9 +1,9 @@
 import styles from './App.module.css';
-import { getApiResource } from '../../utils/newtork';
+import PeoplePage from '../PeoplePage/PeoplePage';
 
 const App = () => {
 	return (
-		<h1 className={styles.header}>Hello</h1>
+		<PeoplePage />
 	)
 }
 
