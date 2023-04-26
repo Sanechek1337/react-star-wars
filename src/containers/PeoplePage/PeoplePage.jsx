@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { withErrorApi } from '../../hoc-helpers/withErrorApi';
-import { getApiResource } from '../../utils/newtork';
-import { API_PEOPLE } from '../../constants/api';
-import { getPeopleId, getPeopleImage } from '../../services/getPeopleData';
-import PeopleList from '../../components/PeoplePage/PeopleList/PeopleList';
+import { withErrorApi } from '@hoc-helpers/withErrorApi';
+import { getApiResource } from '@utils/newtork';
+import { API_PEOPLE } from '@constants/api';
+import { getPeopleId, getPeopleImage } from '@services/getPeopleData';
+import PeopleList from '@components/PeoplePage/PeopleList/PeopleList';
 
 import styles from './PeoplePage.module.css';
 
