@@ -21,12 +21,9 @@ const PeoplePage = ({ setErrorApi }) => {
 	const query = useQueryParams();
 	const queryPage = query.get('page');
 
-	// console.log(queryPage, prevPage, nextPage)
 
 	const getResource = async (url) => {
 		const res = await getApiResource(url);
-
-		console.log(res);
 
 		if (res) {
 			const peopleList = res.results.map(({ name, url }) => {
