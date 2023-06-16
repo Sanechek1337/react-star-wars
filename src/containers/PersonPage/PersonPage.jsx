@@ -18,14 +18,17 @@ import styles from './PersonPage.module.css';
 const PersonFilms = React.lazy(() => import('@components/PersonPage/PersonFilms'));
 
 const PersonPage = ({ setErrorApi }) => {
-	const { id } = useParams();
+	const [personId, setPersonId] = useState(null);
 	const [personInfo, setPersonInfo] = useState(null);
 	const [personName, setPersonName] = useState(null);
 	const [personPhoto, setPersonPhoto] = useState(null);
 	const [personFilms, setPersonFilms] = useState(null);
 
+	const { id } = useParams();
+
 	useEffect(() => {
 		(async () => {
+			setPersonId(id);
 			const res = await getApiResource(`${API_PERSON}/${id}`);
 
 			if (res) {
@@ -58,6 +61,7 @@ const PersonPage = ({ setErrorApi }) => {
 
 				<div className={styles.container}>
 					<PersonPhoto
+						personId={personId}
 						personPhoto={personPhoto}
 						personName={personName}
 					/>
