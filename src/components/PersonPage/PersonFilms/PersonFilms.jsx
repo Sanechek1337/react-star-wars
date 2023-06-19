@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import PropTypes from 'prop-types';
 
-import { makeConcurrentRequest, changeHTTP } from '@utils/newtork';
+import { makeConcurrentRequest, changeHTTP } from '@utils/network';
 
 import styles from './PersonFilms.module.css';
 

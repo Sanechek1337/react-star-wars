@@ -10,7 +10,7 @@ import PersonPhoto from '@components/PersonPage/PersonPhoto';
 import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 import UiLoading from '@components/UI/UiLoading/UiLoading';
 
-import { getApiResource } from '@utils/newtork';
+import { getApiResource } from '@utils/network';
 import { API_PERSON } from '@constants/api';
 import { getPeopleImage } from '@services/getPeopleData';
 
