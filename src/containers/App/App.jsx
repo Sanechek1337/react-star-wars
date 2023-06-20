@@ -9,9 +9,6 @@ const App = () => {
 	return (
 		<div className={styles.wrapper}>
 			<Header />
-
-			<h1>Hello</h1>
-
 			<Routes>
 				{routesConfig.map((route, index) => (
 					<Route
